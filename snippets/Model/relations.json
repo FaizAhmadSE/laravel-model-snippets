@@ -1,0 +1,72 @@
+{
+    "Laravel Model: One to One Relationship": {
+        "prefix": "m:oto",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->hasOne('App\\\\$0');",
+            "}"
+        ],
+        "description": "One to One: Define a One to One relationship within your model."
+    },
+    "Laravel Model: One to Many": {
+        "prefix": "m:otm",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->hasMany('App\\\\$0');",
+            "}"
+        ],
+        "description": "One to Many: Define a One to Many relationship within your model."
+    },
+    "Laravel Model: Many to Many": {
+        "prefix": "m:mtm",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->belongsToMany('App\\\\$0');",
+            "}"
+        ],
+        "description": "Many to Many: Define a Many to Many relationship within your model."
+    },
+    "Laravel Model: Belongs To Relationship": {
+        "prefix": "m:bt",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->belongsTo('App\\\\$0');",
+            "}"
+        ],
+        "description": "Belongs To: Define a Belongs To relationship within your model."
+    },
+    "Laravel Model: Belongs to Many": {
+        "prefix": "m:btm",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->belongsToMany('App\\\\$0');",
+            "}"
+        ],
+        "description": "Belongs to Many: Define a Belongs to Many relationship within your model."
+    },
+    "Laravel Model: Has One Through": {
+        "prefix": "m:hot",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->hasOneThrough('App\\\\$2', 'App\\\\$3');",
+            "}"
+        ],
+        "description": "Has One Through: Define a Has One Through relationship within your model. (5.8+)"
+    },
+    "Laravel Model: Has Many Through": {
+        "prefix": "m:hmt",
+        "body": [
+            "public function $1()",
+            "{",
+            "\treturn \\$this->hasManyThrough('App\\\\$0');",
+            "}"
+        ],
+        "description": "Has Many Through: Define a Has Many Through relationship within your model."
+    }
+}

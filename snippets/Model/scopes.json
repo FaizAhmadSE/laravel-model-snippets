@@ -1,0 +1,18 @@
+{
+    "Laravel Model: Local Scope": {
+        "prefix": "m:s",
+        "body": [
+            "/**",
+            " * Scope a query to only include $1",
+            " *",
+            " * @param  \\Illuminate\\Database\\Eloquent\\Builder \\$query",
+            " * @return \\Illuminate\\Database\\Eloquent\\Builder",
+            " */",
+            "public function scope$2(\\$query$3)",
+            "{",
+            "\treturn \\$query->where('$4'$0);",
+            "}"
+        ],
+        "description": "Local Scope: Query a local scope within your model."
+    }
+}

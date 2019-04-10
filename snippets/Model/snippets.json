@@ -1,0 +1,261 @@
+{
+    "Laravel Model: Table": {
+        "prefix": "m:table",
+        "body": [
+            "/**",
+            " * The table associated with the model.",
+            " *",
+            " * @var string",
+            " */",
+            "protected \\$table = '$0';"
+        ],
+        "description": "Protected Table: The table associated with the model."
+    },
+    "Laravel Model: Primary Key": {
+        "prefix": "m:pk",
+        "body": [
+            "/**",
+            " * The primary key associated with the table.",
+            " *",
+            " * @var string",
+            " */",
+            "protected \\$primaryKey = '$0';"
+        ],
+        "description": "Primary Key: The primary key associated with the table."
+    },
+    "Laravel Model: Timestamps": {
+        "prefix": "m:ts",
+        "body": [
+            "/**",
+            " * Indicates if the model should be timestamped.",
+            " *",
+            " * @var bool",
+            " */",
+            "public \\$timestamps = ${1:false};"
+        ],
+        "description": "Timestamps: Indicates if the model should be timestamped."
+    },
+    "Laravel Model: Date Format": {
+        "prefix": "m:df",
+        "body": [
+            "/**",
+            " * The storage format of the model's date columns.",
+            " *",
+            " * @var string",
+            " */",
+            "protected \\$dateFormat = '$0';"
+        ],
+        "description": "Date Format: The storage format of the model's date columns."
+    },
+    "Laravel Model: Database Connection": {
+        "prefix": "m:con",
+        "body": [
+            "/**",
+            " * The connection name for the model.",
+            " *",
+            " * @var string",
+            " */",
+            "protected \\$connection = '$0';"
+        ],
+        "description": "Datebase Connection: The connection name for the model."
+    },
+    "Laravel Model: Attribute Casting": {
+        "prefix": "m:casts",
+        "body": [
+            "/**",
+            " * The attributes that should be cast to native types.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$casts = [",
+            "\t'$1' => '${0:type}',",
+            " ];"
+        ],
+        "description": "Attribute Casting: he attributes that should be cast to native types within your model."
+    },
+    "Laravel Model: Mass Assignment (Fillable) ": {
+        "prefix": "m:fillable",
+        "body": [
+            "/**",
+            " * The attributes that are mass assignable.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$fillable = ['$0'];"
+        ],
+        "description": "Mass Assignment (Fillable): The attributes that are mass assignable."
+    },
+    "Laravel Model: Guard Attributes": {
+        "prefix": "m:guarded",
+        "body": [
+            "/**",
+            " * The attributes that aren't mass assignable.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$guarded = [$0];"
+        ],
+        "description": "Guard Attributes: The attributes that aren't mass assignable."
+    },
+    "Laravel Model: Dates": {
+        "prefix": "m:dates",
+        "body": [
+            "/**",
+            " * The attributes that should be mutated to dates.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$dates = ['created_at', 'updated_at', '${0:deleted_at}'];"
+        ],
+        "description": "Dates: The attributes that should be mutated to dates."
+    },
+    "Laravel Model: Boot": {
+        "prefix": "m:boot",
+        "body": [
+            "/**",
+            " * The \"booting\" method of the model.",
+            " *",
+            " * @return void",
+            " */",
+            "protected static function boot()",
+            "{",
+            "\tparent::boot();",
+            "\t",
+            "\t$0",
+            "}"
+        ],
+        "description": "Boot: The \"booting\" method of the model."
+    },
+    "Laravel Model: Hidden": {
+        "prefix": "m:hidden",
+        "body": [
+            "/**",
+            " * The attributes that should be hidden for arrays.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$hidden = ['$0'];"
+        ],
+        "description": "Hidden: The attributes that should be hidden for arrays."
+    },
+    "Laravel Model: Visible": {
+        "prefix": "m:visible",
+        "body": [
+            "/**",
+            " * The attributes that should be visible in arrays.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$visible = ['$0'];"
+        ],
+        "description": "Visible: The attributes that should be visible in arrays."
+    },
+    "Laravel Model: Appends": {
+        "prefix": "m:appends",
+        "body": [
+            "/**",
+            " * The accessors to append to the model's array form.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$appends = ['$0'];"
+        ],
+        "description": "Appends: The accessors to append to the model's array form."
+    },
+    "Laravel Model: Touches": {
+        "prefix": "m:tc",
+        "body": [
+            "/**",
+            " * The relationships that should be touched on save.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$touches = [$0];"
+        ],
+        "description": "Touches: The relationships that should be touched on save."
+    },
+    "Laravel Model: Incrementing": {
+        "prefix": "m:inc",
+        "body": [
+            "/**",
+            " * Indicates if the IDs are auto-incrementing.",
+            " *",
+            " * @var bool",
+            " */",
+            "protected \\$incrementing = ${1:false};"
+        ],
+        "description": "Incrementing: Indicates if the IDs are auto-incrementing."
+    },
+    "Laravel Model: KeyType": {
+        "prefix": "m:kt",
+        "body": [
+            "/**",
+            " * The \"type\" of the auto-incrementing ID.",
+            " *",
+            " * @var string",
+            " */",
+            "protected \\$keyType = ${1:'int'};"
+        ],
+        "description": "KeyType: The \"type\" of the auto-incrementing ID."
+    },
+    "Laravel Model: PerPage": {
+        "prefix": "m:pp",
+        "body": [
+            "/**",
+            " * The number of models to return for pagination.",
+            " *",
+            " * @var int",
+            " */",
+            "protected \\$perPage = $0;"
+        ],
+        "description": "PerPage: The number of models to return for pagination."
+    },
+    "Laravel Model: Created At": {
+        "prefix": "m:cat",
+        "body": [
+            "/**",
+            " * The name of the \"created at\" column.",
+            " *",
+            " * @var string",
+            " */",
+            "const CREATED_AT = '${1:created_at}';$0"
+        ],
+        "description": "Created At: The name of the \"created at\" column."
+    },
+    "Laravel Model: Updated At": {
+        "prefix": "m:uat",
+        "body": [
+            "/**",
+            " * The name of the \"updated at\" column.",
+            " *",
+            " * @var string",
+            " */",
+            "const UPDATED_AT = '${1:updated_at}';$0"
+        ],
+        "description": "Updated At: The name of the \"updated at\" column."
+    },
+    "Laravel Model: Eager Load Relation": {
+        "prefix": "m:with",
+        "body": [
+            "/**",
+            " * The relations to eager load on every query.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$with = ['$0'];"
+        ],
+        "description": "Deleted At: The name of the \"deleted at\" column."
+    },
+    "Laravel Model: Eager Load Relation Count": {
+        "prefix": "m:withcount",
+        "body": [
+            "/**",
+            " * The relationship counts that should be eager loaded on every query.",
+            " *",
+            " * @var array",
+            " */",
+            "protected \\$withCount = ['$0'];"
+        ],
+        "description": "The relationship counts that should be eager loaded on every query."
+    }
+}
